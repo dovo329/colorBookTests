@@ -25,9 +25,9 @@
         self.inputImage = [[CIImage alloc] initWithCGImage:UIImg.CGImage];
         
         // Set data for cube
-        self.cubeData = (float *)malloc (kColorCubeSize);
+        cubeData = (float *)malloc (kColorCubeSize);
         
-        float rgb[3], *c = self.cubeData;
+        float rgb[3], *c = cubeData;
         // Populate cube with a simple gradient going from 0 to 1
         for (int z = 0; z < kColorCubeSideSize; z++){
             rgb[2] = ((double)z)/(kColorCubeSideSize-1); // Blue value
@@ -57,9 +57,9 @@
             }
         }
         // Create memory with the cube data
-        self.cubeNSData = [NSData dataWithBytesNoCopy:self.cubeData
+        self.cubeNSData = [NSData dataWithBytesNoCopy:cubeData
                                                length:kColorCubeSize
-                                         freeWhenDone:YES];
+                                         freeWhenDone:NO];
         
         self.filter = [CIFilter filterWithName:@"CIColorCube"];
         [self.filter setValue:@(kColorCubeSideSize) forKey:@"inputCubeDimension"];
@@ -73,20 +73,8 @@
 
 
 - (CIImage *)outputImage {
-    //NSLog(@"start %s", __PRETTY_FUNCTION__);
-    /*float rgb[3], *c = self.cubeData;
-     if (self.toggle) {
-     
-     } else {
-     
-     }
-     // Create memory with the cube data
-     self.cubeNSData = [NSData dataWithBytesNoCopy:self.cubeData
-     length:kColorCubeSize
-     freeWhenDone:YES];*/
-    self.cubeData = (float *)malloc (kColorCubeSize);
-    
-    float rgb[3], *c = self.cubeData;
+    //self.cubeData = (float *)malloc (kColorCubeSize);
+    float rgb[3], *c = cubeData;
     // Populate cube with a simple gradient going from 0 to 1
     for (int z = 0; z < kColorCubeSideSize; z++){
         rgb[2] = ((double)z)/(kColorCubeSideSize-1); // Blue value
@@ -116,25 +104,14 @@
         }
     }
     // Create memory with the cube data
-    self.cubeNSData = [NSData dataWithBytesNoCopy:self.cubeData
-                                           length:kColorCubeSize
-                                     freeWhenDone:YES];
-    
-    //CIFilter *colorCube = [CIFilter filterWithName:@"CIColorCube"];
-    //[colorCube setValue:@(kColorCubeSideSize) forKey:@"inputCubeDimension"];
-    // Set data for cube
+    //self.cubeNSData = [NSData dataWithBytesNoCopy:cubeData
+    //                                       length:kColorCubeSize
+    //                                 freeWhenDone:NO];
     
     // update colorcube on filter
     [self.filter setValue:self.cubeNSData forKey:@"inputCubeData"];
     CIImage *ciImage = [self.filter valueForKey:kCIOutputImageKey];
     return ciImage;
-    //UIImage *result = [UIImage imageWithCIImage:ciImage];
-    
-    //[result drawInRect:self.bounds];
-    
-    //self.firstTime = false;
-    
-    //NSLog(@"end %s", __PRETTY_FUNCTION__);
 }
 
 @end
