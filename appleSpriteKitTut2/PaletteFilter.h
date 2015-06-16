@@ -12,13 +12,14 @@
 #define kColorCubeSideSize 64
 #define kColorCubeSize kColorCubeSideSize * kColorCubeSideSize * kColorCubeSideSize * sizeof (float) * 4
 
-@interface PaletteFilter : CIFilter {
-    float *cubeData;
-}
+@interface PaletteFilter : CIFilter
 
 @property (strong, nonatomic) CIImage *inputImage;
 @property (assign, nonatomic) BOOL toggle;
+@property (assign, nonatomic) float *cubeData;
+@property (assign, nonatomic) float *cubeData2;
 @property (strong, nonatomic) NSData *cubeNSData;
+@property (strong, nonatomic) NSData *cubeNSData2;
 @property (strong, nonatomic) CIContext *ciContext;
 @property (strong, nonatomic) CIFilter *filter;
 
