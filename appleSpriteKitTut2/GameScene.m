@@ -11,23 +11,20 @@
 @implementation GameScene
 
 -(void)didMoveToView:(SKView *)view {
-    /* Setup your scene here */
-    /*SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-    
-    myLabel.text = @"Hello, World!";
-    myLabel.fontSize = 65;
-    myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                   CGRectGetMidY(self.frame));
-    
-    [self addChild:myLabel];*/
+
+    self.paletteFilter = [PaletteFilter new];
+    self.paletteEffect = [SKEffectNode new];
+    [self.paletteEffect setFilter:self.paletteFilter];
     
     self.sprite = [SKSpriteNode spriteNodeWithImageNamed:@"mtnHouseWithSun"];
         
-    self.sprite.xScale = 1.0;
-    self.sprite.yScale = 1.0;
-    self.sprite.position = CGPointMake(0, 0);
-
-    [self addChild:self.sprite];
+    self.sprite.xScale = 0.5;
+    self.sprite.yScale = 0.5;
+    
+    self.sprite.position = CGPointMake(self.sprite.size.width/2.0, self.sprite.size.height/2.0);
+    
+    [self.paletteEffect addChild:self.sprite];
+    [self addChild:self.paletteEffect];
 
     self.lastTranslatePoint = CGPointMake(0,0);
     UIPanGestureRecognizer *panGest = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanMethod:)];
@@ -54,24 +51,8 @@
     self.lastTranslatePoint = CGPointMake(0, 0);
     NSLog(@"lastTranslatePoint x:%f y:%f", self.lastTranslatePoint.x, self.lastTranslatePoint.y);
     
-    /* Called when a touch begins */
-    
-    /*for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
-        
-        //SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"mtnHouseWithSun"];
-        
-        sprite.xScale = 0.2;
-        sprite.yScale = 0.2;
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
-    }*/
+    self.paletteFilter.toggle = !self.paletteFilter.toggle;
+    NSLog(@"touches began");
 }
 
 -(void)update:(CFTimeInterval)currentTime {

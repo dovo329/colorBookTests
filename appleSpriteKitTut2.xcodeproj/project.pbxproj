@@ -16,6 +16,7 @@
 		A51ECC0F1B30974700767A7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51ECC0E1B30974700767A7F /* Images.xcassets */; };
 		A51ECC121B30974700767A7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A51ECC101B30974700767A7F /* LaunchScreen.xib */; };
 		A51ECC1E1B30974700767A7F /* appleSpriteKitTut2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A51ECC1D1B30974700767A7F /* appleSpriteKitTut2Tests.m */; };
+		A58C754F1B30A1D7004A68A8 /* PaletteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A58C754E1B30A1D7004A68A8 /* PaletteFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		A51ECC171B30974700767A7F /* appleSpriteKitTut2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appleSpriteKitTut2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51ECC1C1B30974700767A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A51ECC1D1B30974700767A7F /* appleSpriteKitTut2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appleSpriteKitTut2Tests.m; sourceTree = "<group>"; };
+		A58C754D1B30A1D7004A68A8 /* PaletteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaletteFilter.h; sourceTree = "<group>"; };
+		A58C754E1B30A1D7004A68A8 /* PaletteFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteFilter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				A51ECC011B30974700767A7F /* AppDelegate.m */,
 				A51ECC031B30974700767A7F /* GameScene.h */,
 				A51ECC041B30974700767A7F /* GameScene.m */,
+				A58C754D1B30A1D7004A68A8 /* PaletteFilter.h */,
+				A58C754E1B30A1D7004A68A8 /* PaletteFilter.m */,
 				A51ECC061B30974700767A7F /* GameScene.sks */,
 				A51ECC081B30974700767A7F /* GameViewController.h */,
 				A51ECC091B30974700767A7F /* GameViewController.m */,
@@ -231,6 +236,7 @@
 				A51ECC0A1B30974700767A7F /* GameViewController.m in Sources */,
 				A51ECC021B30974700767A7F /* AppDelegate.m in Sources */,
 				A51ECC051B30974700767A7F /* GameScene.m in Sources */,
+				A58C754F1B30A1D7004A68A8 /* PaletteFilter.m in Sources */,
 				A51ECBFF1B30974700767A7F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +434,7 @@
 				A51ECC231B30974700767A7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A51ECC241B30974700767A7F /* Build configuration list for PBXNativeTarget "appleSpriteKitTut2Tests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +443,7 @@
 				A51ECC261B30974700767A7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
