@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A51ECBFF1B30974700767A7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A51ECBFE1B30974700767A7F /* main.m */; };
+		A51ECC021B30974700767A7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A51ECC011B30974700767A7F /* AppDelegate.m */; };
+		A51ECC051B30974700767A7F /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A51ECC041B30974700767A7F /* GameScene.m */; };
+		A51ECC071B30974700767A7F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A51ECC061B30974700767A7F /* GameScene.sks */; };
+		A51ECC0A1B30974700767A7F /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A51ECC091B30974700767A7F /* GameViewController.m */; };
+		A51ECC0D1B30974700767A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51ECC0B1B30974700767A7F /* Main.storyboard */; };
+		A51ECC0F1B30974700767A7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51ECC0E1B30974700767A7F /* Images.xcassets */; };
+		A51ECC121B30974700767A7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A51ECC101B30974700767A7F /* LaunchScreen.xib */; };
+		A51ECC1E1B30974700767A7F /* appleSpriteKitTut2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A51ECC1D1B30974700767A7F /* appleSpriteKitTut2Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A51ECC181B30974700767A7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A51ECBF11B30974700767A7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A51ECBF81B30974700767A7F;
+			remoteInfo = appleSpriteKitTut2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A51ECBF91B30974700767A7F /* appleSpriteKitTut2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appleSpriteKitTut2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51ECBFD1B30974700767A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A51ECBFE1B30974700767A7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A51ECC001B30974700767A7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A51ECC011B30974700767A7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A51ECC031B30974700767A7F /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		A51ECC041B30974700767A7F /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		A51ECC061B30974700767A7F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		A51ECC081B30974700767A7F /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		A51ECC091B30974700767A7F /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		A51ECC0C1B30974700767A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A51ECC0E1B30974700767A7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A51ECC111B30974700767A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A51ECC171B30974700767A7F /* appleSpriteKitTut2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appleSpriteKitTut2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51ECC1C1B30974700767A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A51ECC1D1B30974700767A7F /* appleSpriteKitTut2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appleSpriteKitTut2Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A51ECBF61B30974700767A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51ECC141B30974700767A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A51ECBF01B30974700767A7F = {
+			isa = PBXGroup;
+			children = (
+				A51ECBFB1B30974700767A7F /* appleSpriteKitTut2 */,
+				A51ECC1A1B30974700767A7F /* appleSpriteKitTut2Tests */,
+				A51ECBFA1B30974700767A7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A51ECBFA1B30974700767A7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A51ECBF91B30974700767A7F /* appleSpriteKitTut2.app */,
+				A51ECC171B30974700767A7F /* appleSpriteKitTut2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A51ECBFB1B30974700767A7F /* appleSpriteKitTut2 */ = {
+			isa = PBXGroup;
+			children = (
+				A51ECC001B30974700767A7F /* AppDelegate.h */,
+				A51ECC011B30974700767A7F /* AppDelegate.m */,
+				A51ECC031B30974700767A7F /* GameScene.h */,
+				A51ECC041B30974700767A7F /* GameScene.m */,
+				A51ECC061B30974700767A7F /* GameScene.sks */,
+				A51ECC081B30974700767A7F /* GameViewController.h */,
+				A51ECC091B30974700767A7F /* GameViewController.m */,
+				A51ECC0B1B30974700767A7F /* Main.storyboard */,
+				A51ECC0E1B30974700767A7F /* Images.xcassets */,
+				A51ECC101B30974700767A7F /* LaunchScreen.xib */,
+				A51ECBFC1B30974700767A7F /* Supporting Files */,
+			);
+			path = appleSpriteKitTut2;
+			sourceTree = "<group>";
+		};
+		A51ECBFC1B30974700767A7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A51ECBFD1B30974700767A7F /* Info.plist */,
+				A51ECBFE1B30974700767A7F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A51ECC1A1B30974700767A7F /* appleSpriteKitTut2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A51ECC1D1B30974700767A7F /* appleSpriteKitTut2Tests.m */,
+				A51ECC1B1B30974700767A7F /* Supporting Files */,
+			);
+			path = appleSpriteKitTut2Tests;
+			sourceTree = "<group>";
+		};
+		A51ECC1B1B30974700767A7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A51ECC1C1B30974700767A7F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A51ECBF81B30974700767A7F /* appleSpriteKitTut2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51ECC211B30974700767A7F /* Build configuration list for PBXNativeTarget "appleSpriteKitTut2" */;
+			buildPhases = (
+				A51ECBF51B30974700767A7F /* Sources */,
+				A51ECBF61B30974700767A7F /* Frameworks */,
+				A51ECBF71B30974700767A7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = appleSpriteKitTut2;
+			productName = appleSpriteKitTut2;
+			productReference = A51ECBF91B30974700767A7F /* appleSpriteKitTut2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A51ECC161B30974700767A7F /* appleSpriteKitTut2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51ECC241B30974700767A7F /* Build configuration list for PBXNativeTarget "appleSpriteKitTut2Tests" */;
+			buildPhases = (
+				A51ECC131B30974700767A7F /* Sources */,
+				A51ECC141B30974700767A7F /* Frameworks */,
+				A51ECC151B30974700767A7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A51ECC191B30974700767A7F /* PBXTargetDependency */,
+			);
+			name = appleSpriteKitTut2Tests;
+			productName = appleSpriteKitTut2Tests;
+			productReference = A51ECC171B30974700767A7F /* appleSpriteKitTut2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A51ECBF11B30974700767A7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = DougsApps;
+				TargetAttributes = {
+					A51ECBF81B30974700767A7F = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					A51ECC161B30974700767A7F = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = A51ECBF81B30974700767A7F;
+					};
+				};
+			};
+			buildConfigurationList = A51ECBF41B30974700767A7F /* Build configuration list for PBXProject "appleSpriteKitTut2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A51ECBF01B30974700767A7F;
+			productRefGroup = A51ECBFA1B30974700767A7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A51ECBF81B30974700767A7F /* appleSpriteKitTut2 */,
+				A51ECC161B30974700767A7F /* appleSpriteKitTut2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A51ECBF71B30974700767A7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51ECC121B30974700767A7F /* LaunchScreen.xib in Resources */,
+				A51ECC0F1B30974700767A7F /* Images.xcassets in Resources */,
+				A51ECC071B30974700767A7F /* GameScene.sks in Resources */,
+				A51ECC0D1B30974700767A7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51ECC151B30974700767A7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A51ECBF51B30974700767A7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51ECC0A1B30974700767A7F /* GameViewController.m in Sources */,
+				A51ECC021B30974700767A7F /* AppDelegate.m in Sources */,
+				A51ECC051B30974700767A7F /* GameScene.m in Sources */,
+				A51ECBFF1B30974700767A7F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51ECC131B30974700767A7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51ECC1E1B30974700767A7F /* appleSpriteKitTut2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A51ECC191B30974700767A7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A51ECBF81B30974700767A7F /* appleSpriteKitTut2 */;
+			targetProxy = A51ECC181B30974700767A7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A51ECC0B1B30974700767A7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51ECC0C1B30974700767A7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A51ECC101B30974700767A7F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51ECC111B30974700767A7F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A51ECC1F1B30974700767A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A51ECC201B30974700767A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A51ECC221B30974700767A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = appleSpriteKitTut2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A51ECC231B30974700767A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = appleSpriteKitTut2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A51ECC251B30974700767A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = appleSpriteKitTut2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/appleSpriteKitTut2.app/appleSpriteKitTut2";
+			};
+			name = Debug;
+		};
+		A51ECC261B30974700767A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = appleSpriteKitTut2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/appleSpriteKitTut2.app/appleSpriteKitTut2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A51ECBF41B30974700767A7F /* Build configuration list for PBXProject "appleSpriteKitTut2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51ECC1F1B30974700767A7F /* Debug */,
+				A51ECC201B30974700767A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A51ECC211B30974700767A7F /* Build configuration list for PBXNativeTarget "appleSpriteKitTut2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51ECC221B30974700767A7F /* Debug */,
+				A51ECC231B30974700767A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A51ECC241B30974700767A7F /* Build configuration list for PBXNativeTarget "appleSpriteKitTut2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51ECC251B30974700767A7F /* Debug */,
+				A51ECC261B30974700767A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A51ECBF11B30974700767A7F /* Project object */;
+}
