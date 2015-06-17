@@ -45,8 +45,11 @@
     //self.sprite = [SKSpriteNode spriteNodeWithTexture:texture];
     self.sprite = [SKSpriteNode spriteNodeWithImageNamed:@"mtnHouseWithSun"];
     
-    self.sprite.xScale = 0.5;
-    self.sprite.yScale = 0.5;
+    CGFloat newXScale = self.size.width / self.sprite.size.width;
+    CGFloat newYScale = self.size.height / self.sprite.size.height;
+    CGFloat newScale = MIN(newXScale, newYScale);
+    self.sprite.xScale = newScale;
+    self.sprite.yScale = newScale;
     //self.sprite.blendMode = SKBlendModeReplace;
     
     //self.sprite.position = CGPointMake(self.sprite.size.width/2.0, self.sprite.size.height/2.0);
@@ -82,31 +85,45 @@
 
 -(void)handlePinchMethod:(UIPinchGestureRecognizer *)sender
 {
-    //NSLog(@"scale = %f", sender.scale);
-    //NSLog(@"velocity = %f", sender.velocity);
-    self.sprite.xScale += sender.velocity*0.025;
-    self.sprite.yScale += sender.velocity*0.025;
+    CGFloat scaleDelta = sender.velocity*0.025;
+    self.sprite.xScale += scaleDelta;
+    self.sprite.yScale += scaleDelta;
+
+    CGFloat spriteLeft = (self.anchorPoint.x*self.size.width) - (self.sprite.anchorPoint.x*self.sprite.size.width);
+    CGFloat spriteRight = (self.anchorPoint.x*self.size.width) + ((1.0-self.sprite.anchorPoint.x)*self.sprite.size.width);
+    CGFloat spriteBottom = (self.anchorPoint.y*self.size.height) - (self.sprite.anchorPoint.y*self.sprite.size.height);
+    CGFloat spriteTop = (self.anchorPoint.y*self.size.height) + ((1.0-self.sprite.anchorPoint.y)*self.sprite.size.height);
+
+    // if we are zooming out then check for clip, but allow zoom in
+    if (scaleDelta < 0.0)
+    {
+        // check if have exceeded bounds and undo scale if we have
+        if ((spriteLeft > 0.0 || spriteRight < self.size.width) ||
+            (spriteBottom > 0.0 || spriteTop < self.size.height))
+        {
+            self.sprite.xScale -= scaleDelta;
+            self.sprite.yScale -= scaleDelta;
+        }
+    }
+    // max zoom in of 6x
     if (self.sprite.xScale > 6.0) {
         self.sprite.xScale = 6.0;
     }
     if (self.sprite.yScale > 6.0) {
         self.sprite.yScale = 6.0;
     }
-    if (self.sprite.xScale < 0.1) {
-        self.sprite.xScale = 0.1;
-    }
-    if (self.sprite.yScale < 0.1) {
-        self.sprite.yScale = 0.1;
-    }
-    NSLog(@"scale = %f; velocity = %f xScale=%f yScale=%f", sender.scale, sender.velocity, self.sprite.xScale, self.sprite.yScale);
-    //self.sprite.zRotation += sender.velocity*0.1;
+    
+    //NSLog(@"scale = %f; velocity = %f xScale=%f yScale=%f", sender.scale, sender.velocity, self.sprite.xScale, self.sprite.yScale);
 }
 
 -(void)handlePanMethod:(UIPanGestureRecognizer *)sender
 {
     CGPoint translatedPoint = [sender translationInView:self.view];
 
-    CGFloat widthRatio = self.sprite.size.width/self.size.width;
+    CGFloat deltaX = -(translatedPoint.x - self.lastTranslatePoint.x);
+    CGFloat deltaY = (translatedPoint.y - self.lastTranslatePoint.y);
+    
+    /*CGFloat widthRatio = self.sprite.size.width/self.size.width;
     CGFloat heightRatio = self.sprite.size.height/self.size.height;
     
     // only allow scroll if content is larger than the screen in that direction
@@ -120,7 +137,7 @@
     if (heightRatio > 1.0)
     {
         deltaY = (translatedPoint.y - self.lastTranslatePoint.y);
-    }
+    }*/
     
     //NSLog(@"delta x:%f y:%f", deltaX, deltaY);
     //CGPoint newPoint = CGPointMake(deltaX+self.sprite.position.x, deltaY+self.sprite.position.y);
